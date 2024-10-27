@@ -3,7 +3,6 @@ import requests
 
 while True:
     page = 1
-    op = 0
 
     stars_dict = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five'}
 
