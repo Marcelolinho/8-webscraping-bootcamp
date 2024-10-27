@@ -23,6 +23,8 @@ while True:
             if star_rating == input_star and stock != None:
                 title = book.h3.a['title']
                 price = book.find('p', class_='price_color').text
-                print(f'Título: {title}, Preço: {price}, Estrelas: {stars} estrelas')
+                with open(f'books/{stars}.txt', 'w') as f:
+                    f.write(f'Título: {title}, Preço: {price}, Estrelas: {stars} estrelas')
+                
 
         page += 1
